@@ -11,6 +11,7 @@ const useStore = create((set, get) => ({
 
     drinksData: [],
     cartData: [],
+    receipt: [],
 
     getDrinksData: async () => {
         set(() => ({ loading: true }));
@@ -31,13 +32,19 @@ const useStore = create((set, get) => ({
     },
     removeDrinkFromCart: (product) => {
         set(produce((state) => {
-            const index = state.cartDate.indexOf(product.id);
-            state.cartData = state.cartData.splice(index, 1);
+            const index = get().cartData.findIndex((x) => x.id == product.id);
+            state.cartData.splice(index, 1);
         }));
     },
     clearCart: () =>{
         set(() => ({ cartData: [] }));
-    }
+    },
+    createReceipt: () => {
+        set(produce((state) => {
+            state.receipt.push(get().cartData); 
+        }));
+        get().clearCart();
+    },
 }));
 
 export default useStore;

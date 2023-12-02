@@ -1,40 +1,31 @@
 import '../App.css';
+import useStore from '../store/store.js';
 import ProductList from '../components/product_list';
 
  function CheckoutPage() {
-//   const receipt = useSelector((state)=>{
-//     return state.receipt;
-//   });
-  
-//   const getTotalPrice = () =>{
-//     let price = 0;
-//     for(let i=0; i< currentCart.length; i++){
-//       price += currentCart[i].price;
-//     }
-//     return price;
-//   }
+  const receipt = useStore((state) => state.receipt);
 
-//   let currentCart = []; // the receipt has an array where each item is a cart array
+  const getTotalPrice = (currentCart) =>{
+    let price = 0;
+    for(let i=0; i< currentCart.length; i++){
+      price += currentCart[i].price;
+    }
+    return price;
+  }
 
-//   let content = receipt.map((cart)=>{
-//     currentCart = cart;
-//     let list = <ProductList cart={cart}></ProductList>
-//     return <div className='border-2'>{list}<h1>Total price {getTotalPrice()}</h1></div>
-//   })
+  let content = receipt.map((cart)=>{
+    let list = <ProductList cart={cart}></ProductList>
+    return <div className='border-2'>{list}<h1>Total price {getTotalPrice(cart)}</h1></div>
+  })
 
-//   return (
-//     <div>
-//       <h1>Checkout Page</h1>
-//       <div className='grid grid-rows-1 grid-flow-col gap-4'>
-//         {content}
-//       </div>
-//     </div>
-//   );
-  return(
+  return (
     <div>
-      checkout page
+      <h1>Checkout Page</h1>
+      <div className='grid grid-rows-1 grid-flow-col gap-4'>
+        {content}
+      </div>
     </div>
-  )
+  );
  }
 
 export default CheckoutPage;

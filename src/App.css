@@ -34,3 +34,13 @@
 .lemon{
   color:yellow !important;
 }
+
+.popup{
+  border-radius: 8px;
+  scale: 1.5;
+  padding: 5px;
+  h1{
+    scale: 1.2;
+    transform: translate(12px,0); 
+  }
+}
