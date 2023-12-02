@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/simplylemonadestand_zustand/static/css/main.e650f8f1.css",
+    "main.js": "/simplylemonadestand_zustand/static/js/main.5330b393.js",
+    "static/media/Plum.jpg": "/simplylemonadestand_zustand/static/media/Plum.346bf5a853cd209b09ff.jpg",
+    "static/media/Blackberries.jpg": "/simplylemonadestand_zustand/static/media/Blackberries.22791fb24668e97ee40f.jpg",
+    "static/media/Elderberries.jpg": "/simplylemonadestand_zustand/static/media/Elderberries.8d71778c99fb8ded3018.jpg",
+    "static/media/Greengage.jpg": "/simplylemonadestand_zustand/static/media/Greengage.0075225f18d1f6836a27.jpg",
+    "static/media/Walnuts.jpg": "/simplylemonadestand_zustand/static/media/Walnuts.988eb54871413f898ac7.jpg",
+    "static/media/Peach.jpg": "/simplylemonadestand_zustand/static/media/Peach.e8ca921a98c5f01214b0.jpg",
+    "static/media/Strawberries.jpg": "/simplylemonadestand_zustand/static/media/Strawberries.ee91756175799b88bba0.jpg",
+    "static/media/Lemons.jpg": "/simplylemonadestand_zustand/static/media/Lemons.96a04ff119c8953cf640.jpg",
+    "static/media/Raspberry.jpg": "/simplylemonadestand_zustand/static/media/Raspberry.18952df6a671c2e35650.jpg",
+    "static/media/Chestnut.jpg": "/simplylemonadestand_zustand/static/media/Chestnut.530cf6bd95a9813bfb55.jpg",
+    "static/media/SomeRedCherry.jpg": "/simplylemonadestand_zustand/static/media/SomeRedCherry.412cc146c0bbeaf8e7e6.jpg",
+    "static/media/Grapes.jpg": "/simplylemonadestand_zustand/static/media/Grapes.993c89b2d3cffaf966cf.jpg",
+    "static/media/Fig.jpg": "/simplylemonadestand_zustand/static/media/Fig.e5c76c320d7aa1fb4115.jpg",
+    "static/media/Bilberries.jpg": "/simplylemonadestand_zustand/static/media/Bilberries.ab0508c31aff16b4f961.jpg",
+    "static/media/Orange.jpg": "/simplylemonadestand_zustand/static/media/Orange.121cfa83d52ad03e1b72.jpg",
+    "static/media/RedRibes.jpg": "/simplylemonadestand_zustand/static/media/RedRibes.e9408392aa4f3ede721b.jpg",
+    "index.html": "/simplylemonadestand_zustand/index.html",
+    "main.e650f8f1.css.map": "/simplylemonadestand_zustand/static/css/main.e650f8f1.css.map",
+    "main.5330b393.js.map": "/simplylemonadestand_zustand/static/js/main.5330b393.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e650f8f1.css",
+    "static/js/main.5330b393.js"
+  ]
+}
