@@ -24,9 +24,9 @@ function App() {
               </div>
               <div className="hidden sm:ml-6 sm:block">
                 <div className="flex space-x-4">
-                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("simplylemonadestand")}>Product Page</button>
-                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("simplylemonadestand/cart")}>Cart</button>
-                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("simplylemonadestand/checkout")}>Checkout</button>
+                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("products")}>Product Page</button>
+                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("/cart")}>Cart</button>
+                  <button className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" onClick={()=> navigate("/checkout")}>Checkout</button>
                 </div>
               </div>
             </div>
@@ -35,11 +35,11 @@ function App() {
       </nav>
       <header className="App-header">
         <Routes>
-          <Route path='/' element={<Navigate to='/simplylemonadestand' />} />
-          <Route path="simplylemonadestand" element={<ProductPage></ProductPage>}></Route>
-          <Route path="simplylemonadestand/cart" element={<CartPage></CartPage>}></Route>
-          <Route path="simplylemonadestand/checkout" element={<CheckoutPage></CheckoutPage>}></Route>
-          <Route path='*' element={<Navigate to='/simplylemonadestand' />} />
+          <Route path='/' element={<Navigate to="products" />} />
+          <Route path="/products" element={<ProductPage></ProductPage>}></Route>
+          <Route path="/cart" element={<CartPage></CartPage>}></Route>
+          <Route path="/checkout" element={<CheckoutPage></CheckoutPage>}></Route>
+          <Route path='*' element={<Navigate to="products" />} />
         </Routes>
       </header>
     </div>
