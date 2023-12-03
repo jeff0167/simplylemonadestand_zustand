@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/simplylemonadestand_zustand/static/css/main.ccf2bfb2.css",
-    "main.js": "/simplylemonadestand_zustand/static/js/main.8dbb9717.js",
+    "main.js": "/simplylemonadestand_zustand/static/js/main.c5dffa7b.js",
     "static/media/Plum.jpg": "/simplylemonadestand_zustand/static/media/Plum.346bf5a853cd209b09ff.jpg",
     "static/media/Blackberries.jpg": "/simplylemonadestand_zustand/static/media/Blackberries.22791fb24668e97ee40f.jpg",
     "static/media/Elderberries.jpg": "/simplylemonadestand_zustand/static/media/Elderberries.8d71778c99fb8ded3018.jpg",
@@ -20,10 +20,10 @@
     "static/media/RedRibes.jpg": "/simplylemonadestand_zustand/static/media/RedRibes.e9408392aa4f3ede721b.jpg",
     "index.html": "/simplylemonadestand_zustand/index.html",
     "main.ccf2bfb2.css.map": "/simplylemonadestand_zustand/static/css/main.ccf2bfb2.css.map",
-    "main.8dbb9717.js.map": "/simplylemonadestand_zustand/static/js/main.8dbb9717.js.map"
+    "main.c5dffa7b.js.map": "/simplylemonadestand_zustand/static/js/main.c5dffa7b.js.map"
   },
   "entrypoints": [
     "static/css/main.ccf2bfb2.css",
-    "static/js/main.8dbb9717.js"
+    "static/js/main.c5dffa7b.js"
   ]
 }
