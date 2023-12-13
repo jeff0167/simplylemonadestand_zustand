@@ -13,9 +13,9 @@ import ProductList from '../components/product_list';
     return price;
   }
 
-  let content = receipt.map((cart)=>{
+  let content = receipt.map((cart, id)=>{
     let list = <ProductList cart={cart}></ProductList>
-    return <div className='border-2'>{list}<h1>Total price {getTotalPrice(cart)}</h1></div>
+    return <div className='border-2' key={id}>{list}<h1>Total price {getTotalPrice(cart)}</h1></div>
   })
 
   return (

@@ -32,7 +32,7 @@ import ProductList from '../components/product_list';
     <div>
       <h1>Cart Page</h1>
       <h1>Total price {getTotalPrice()}</h1>
-      <div classNameName='grid grid-rows-1 grid-flow-col gap-4'>
+      <div className='grid grid-rows-1 grid-flow-col gap-4'>
         <ProductList cart={cart}></ProductList>
       </div>
       <div>
