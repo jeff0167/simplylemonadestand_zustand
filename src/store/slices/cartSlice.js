@@ -1,22 +1,10 @@
 import axios from 'axios';
-import { create } from 'zustand';
 import { produce } from "immer"; // to be able to push object to array
-//import { createCartSlice } from './slices/cartSlice';
-//import { createReceiptSlice } from './slices/receiptSlice';
 
 const url = "https://www.fruitmap.org/api/trees";
 
-const useStore = create((set, get) => ({
-    loading: false,
-    hasErrors: false,
-    errorMessage: "no error",
-
-    //...createCartSlice(set, get),
-    //...createReceiptSlice(set, get),
-
-    drinksData: [], // comment out for slice
-    cartData: [],
-    receipt: [],    // comment out for slice
+export const createCartSlice = (set, get) => ({
+    drinksData: [],
 
     getDrinksData: async () => {
         set(() => ({ loading: true }));
@@ -40,16 +28,5 @@ const useStore = create((set, get) => ({
             const index = get().cartData.findIndex((x) => x.id == product.id);
             state.cartData.splice(index, 1);
         }));
-    },
-    clearCart: () =>{
-        set(() => ({ cartData: [] }));
-    },
-    createReceipt: () => {
-        set(produce((state) => {
-            state.receipt.push(get().cartData); 
-        }));
-        get().clearCart();
-    },
-}));
-
-export default useStore;
+    }
+});
